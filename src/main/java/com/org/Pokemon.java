@@ -19,11 +19,13 @@ public class Pokemon {
 
     public Pokemon() {
 
-        nombre = null;
-        imagen = null;
-        movimientos = new ArrayList<>();
-        estadisticas = new Estadisticas();
+    }
 
+    public Pokemon(Pokemon p){
+        nombre = p.nombre;
+        imagen = p.getImagen();
+        movimientos = p.getMovimientos();
+        estadisticas = p.getEstadisticas();
     }
 
     public void anadirEstadisticas(int hp, int attack, int defense, int specialAttack, int specialDefense, int speed){
