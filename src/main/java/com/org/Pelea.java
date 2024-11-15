@@ -6,15 +6,15 @@ public class Pelea {
     Pokemon pokemon1;
     Pokemon pokemon2;
 
+
+
     public Pelea(){
-        pokemon1 = new Pokemon();
-        pokemon2 = new Pokemon();
 
     }
 
     public Pelea(Pelea p){
-        pokemon1 = p.pokemon1;
-        pokemon2 = p.pokemon2;
+        pokemon1 = new Pokemon(p.getPokemon1());
+        pokemon2 = new Pokemon(p.getPokemon2());
     }
 
     public void anadirNombre1(String nombrePokemon){

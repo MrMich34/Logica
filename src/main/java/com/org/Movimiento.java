@@ -8,6 +8,10 @@ public class Movimiento {
     int priority;
     String tipo;
 
+    public Movimiento(){
+
+    }
+
     public Movimiento(String nombre, String accuracy, String power, String pp, String priority, String tipo) {
         this.nombre = nombre;
         this.accuracy = Integer.parseInt(accuracy);
